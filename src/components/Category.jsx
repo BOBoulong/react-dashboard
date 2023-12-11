@@ -5,31 +5,72 @@ function Category() {
         <h3>ប្រភេទផលិតផល</h3>
       </div>
       <div>
-        <table>
+      <table className="table table-dark">
           <thead>
             <tr>
-              <th>លេខកូដ</th>
-              <th>ប្រភេទផលិតផល</th>
+              <th scope="col">លេខកូដ</th>
+              <th scope="col">ឈ្មោះផលិតផល</th>
+              <th scope="col">ចំនួន</th>
+              <th scope="col">តម្លៃ</th>
+              <th scope="col">លេខកូដប្រភេទផលិតផល</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>1.</td>
-              <td>តែ</td>
-            </tr>
-
-            <tr>
-              <td>2.</td>
-              <td>ស្រាបៀរ</td>
+              <th scope="row">1</th>
+              <td>ស្រាបៀរកម្ពុជា</td>
+              <td>1</td>
+              <td>2500៛</td>
+              <td>2</td>
             </tr>
             <tr>
-              <td>3.</td>
-              <td>ភេស្ជៈប៉ូវកម្លាំង</td>
+              <th scope="row">2</th>
+              <td>បាកាស</td>
+              <td>1</td>
+              <td>3000៛</td>
+              <td>3</td>
             </tr>
-
             <tr>
-              <td>4.</td>
-              <td>នំកញ្ចប់</td>
+              <th scope="row">3</th>
+              <td>នំដំឡូងស្រួយ</td>
+              <td>1</td>
+              <td>2000៛</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td>តែបៃតង</td>
+              <td>1</td>
+              <td>3000៛</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <th scope="row">5</th>
+              <td>ស្រាបៀរABC</td>
+              <td>1</td>
+              <td>6000៛</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <th scope="row">6</th>
+              <td>ស្រាបៀរអង្គរ</td>
+              <td>1</td>
+              <td>3000៛</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <th scope="row">7</th>
+              <td>វេីស</td>
+              <td>1</td>
+              <td>3000៛</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <th scope="row">8</th>
+              <td>គ្រុឌ</td>
+              <td>1</td>
+              <td>3000៛</td>
+              <td>3</td>
             </tr>
           </tbody>
         </table>
