@@ -5,75 +5,36 @@ function Product() {
         <h3>ផលិតផល</h3>
       </div>
       <div className="product-container">
-        <table>
-          <thead>
-            <tr>
-              <th>លេខ</th>
-              <th>ឈ្មោះផលិតផល</th>
-              <th>ចំនួន</th>
-              <th>តម្លៃ</th>
-              <th>លេខកូដប្រភេទផលិតផល</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>1.</td>
-              <td>ស្រាបៀរកម្ពុជា</td>
-              <td>1</td>
-              <td>2500៛</td>
-              <td>2</td>
-            </tr>
-            <tr>
-              <td>2.</td>
-              <td>បាកាស</td>
-              <td>1</td>
-              <td>3000៛</td>
-              <td>3</td>
-            </tr>
-            <tr>
-              <td>3.</td>
-              <td>នំដំឡូងស្រួយ</td>
-              <td>1</td>
-              <td>2000៛</td>
-              <td>4</td>
-            </tr>
-            <tr>
-              <td>4.</td>
-              <td>តែបៃតង</td>
-              <td>1</td>
-              <td>3000៛</td>
-              <td>1</td>
-            </tr>
-            <tr>
-              <td>5.</td>
-              <td>ស្រាបៀរABC</td>
-              <td>1</td>
-              <td>6000៛</td>
-              <td>2</td>
-            </tr>
-            <tr>
-              <td>6.</td>
-              <td>ស្រាបៀរអង្គរ</td>
-              <td>1</td>
-              <td>3000៛</td>
-              <td>2</td>
-            </tr>
-            <tr>
-              <td>7.</td>
-              <td>វេីស</td>
-              <td>1</td>
-              <td>3000៛</td>
-              <td>3</td>
-            </tr>
-            <tr>
-              <td>8.</td>
-              <td>គ្រុឌ</td>
-              <td>1</td>
-              <td>3000៛</td>
-              <td>3</td>
-            </tr>
-          </tbody>
-        </table>
+      <table className="table table-dark">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table>
       </div>
     </main>
   );
