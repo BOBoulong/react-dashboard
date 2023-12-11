@@ -90,6 +90,7 @@ body {
 .sidebar-list-item {
   padding: 20px 20px 20px 20px;
   font-size: 16px;
+  display: block
 }
 
 .sidebar-list-item:hover {
@@ -98,7 +99,13 @@ body {
   width: 100%;
 }
 
-.sidebar-list-item > a {
+.sidebar-list-item.active {
+  background-color: white;
+  color: #000;
+  width: 100%;
+}
+
+.sidebar-list-item {
   text-decoration: none;
   color: #9e9ea4;
 }
@@ -108,7 +115,7 @@ body {
   position: absolute;
   /*
     we want the z-index of the sidebar higher so that
-    the charts are not showing over the sidebar 
+    the charts are not showing over the sidebar
     on small screens
   */
   z-index: 12 !important;
@@ -212,7 +219,7 @@ body {
   align-items: center;
   justify-content: space-between;
 }
-/* 
+/*
 table */
 
 /* table {
