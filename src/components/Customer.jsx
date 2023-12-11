@@ -7,34 +7,46 @@ function Customer() {
       <table className="table table-dark">
         <thead>
           <tr>
-            <th scope="col">#</th>
-            <th scope="col">First</th>
-            <th scope="col">Last</th>
-            <th scope="col">Handle</th>
+            <th scope="col">ID</th>
+            <th scope="col">Name</th>
+            <th scope="col">Age</th>
+            <th scope="col">Gender</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
+            <td>Akram</td>
+            <td>21</td>
+            <td>Male</td>
           </tr>
           <tr>
             <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
+            <td>Jason</td>
+            <td>22</td>
+            <td>Male</td>
           </tr>
           <tr>
             <th scope="row">3</th>
-            <td>Larry</td>
-            <td>the Bird</td>
-            <td>@twitter</td>
+            <td>Dave</td>
+            <td>20</td>
+            <td>Female</td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>Tom</td>
+            <td>20</td>
+            <td>Male</td>
+          </tr>
+          <tr>
+            <th scope="row">5</th>
+            <td>Stark</td>
+            <td>20</td>
+            <td>Male</td>
           </tr>
         </tbody>
       </table>
-    </main >
+    </main>
   );
 }
 
