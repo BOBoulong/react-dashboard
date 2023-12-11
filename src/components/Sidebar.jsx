@@ -39,7 +39,7 @@ function Sidebar({ openSidebarToggle, OpenSidebar }) {
       </div>
 
       <div className="sidebar-list">
-        <a href="/" className='sidebar-list-item'>
+        <a href="/" className={"sidebar-list-item " + (pathname === '/' ? 'active' : '')}>
           <BsGrid1X2Fill className="icon" /> ផ្ទាំងគ្រប់គ្រង
         </a>
         <a href="/product" className={"sidebar-list-item " + (pathname === '/product' ? 'active' : '')}>
