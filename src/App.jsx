@@ -9,6 +9,7 @@ import Customer from './components/Customer';
 import List from './components/List';
 import Report from './components/Report';
 import Setting from './components/Setting';
+import User from './components/User';
 import './App.css';
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
           <Route path="/list" element={<List />}></Route>
           <Route path="/report" element={<Report />}></Route>
           <Route path="/setting" element={<Setting />}></Route>
+          <Route path="/user" element={<User />}></Route>
           {/* <Route path="/" element={}></Route> */}
         </Routes>
       </BrowserRouter>

@@ -12,17 +12,13 @@ import {
 } from 'react-icons/bs';
 import { useEffect, useState } from 'react';
 
-
 function Sidebar({ openSidebarToggle, OpenSidebar }) {
+  const [pathname, setPathname] = useState('');
 
-  const [pathname, setPathname] = useState('')
-
-  useEffect(
-    () => {
-      const currentUrl = window.location.pathname;
-      setPathname(currentUrl)
-    }, []
-  )
+  useEffect(() => {
+    const currentUrl = window.location.pathname;
+    setPathname(currentUrl);
+  }, []);
 
   return (
     <aside
@@ -39,33 +35,73 @@ function Sidebar({ openSidebarToggle, OpenSidebar }) {
       </div>
 
       <div className="sidebar-list">
-        <a href="/" className={"sidebar-list-item " + (pathname === '/' ? 'active' : '')}>
+        <a
+          href="/"
+          className={'sidebar-list-item ' + (pathname === '/' ? 'active' : '')}
+        >
           <BsGrid1X2Fill className="icon" /> ផ្ទាំងគ្រប់គ្រង
         </a>
-        <a href="/product" className={"sidebar-list-item " + (pathname === '/product' ? 'active' : '')}>
-          <BsFillArchiveFill className="icon" /> ផលិតផល
-        </a>
 
-        <a href="/category" className={"sidebar-list-item " + (pathname === '/category' ? 'active' : '')}>
+        <a
+          href="/category"
+          className={
+            'sidebar-list-item ' + (pathname === '/category' ? 'active' : '')
+          }
+        >
           <BsFillGrid3X3GapFill className="icon" /> ប្រភេទផលិតផល
         </a>
 
+        <a
+          href="/product"
+          className={
+            'sidebar-list-item ' + (pathname === '/product' ? 'active' : '')
+          }
+        >
+          <BsFillArchiveFill className="icon" /> ផលិតផល
+        </a>
 
-        <a href="/customer" className={"sidebar-list-item " + (pathname === '/customer' ? 'active' : '')}>
+        <a
+          href="/user"
+          className={
+            'sidebar-list-item ' + (pathname === '/user' ? 'active' : '')
+          }
+        >
+          <BsPeopleFill className="icon" /> អ្នកប្រេីប្រាស់
+        </a>
+
+        <a
+          href="/customer"
+          className={
+            'sidebar-list-item ' + (pathname === '/customer' ? 'active' : '')
+          }
+        >
           <BsPeopleFill className="icon" /> អតិថិជន
         </a>
 
-
-        <a href="/list" className={"sidebar-list-item " + (pathname === '/list' ? 'active' : '')}>
+        <a
+          href="/list"
+          className={
+            'sidebar-list-item ' + (pathname === '/list' ? 'active' : '')
+          }
+        >
           <BsListCheck className="icon" /> បញ្ជី
         </a>
 
-        <a href="/report" className={"sidebar-list-item " + (pathname === '/report' ? 'active' : '')}>
+        <a
+          href="/report"
+          className={
+            'sidebar-list-item ' + (pathname === '/report' ? 'active' : '')
+          }
+        >
           <BsMenuButtonWideFill className="icon" /> របាយការណ៍
         </a>
 
-
-        <a href="setting" className={"sidebar-list-item " + (pathname === '/setting' ? 'active' : '')}>
+        <a
+          href="setting"
+          className={
+            'sidebar-list-item ' + (pathname === '/setting' ? 'active' : '')
+          }
+        >
           <BsFillGearFill className="icon" /> ការកំណត់
         </a>
       </div>
